@@ -24,10 +24,10 @@ M.mappings = {
   { 'n', '<C-j>', '<C-w><C-j>', 'Move focus to the lower window' },
   { 'n', '<C-k>', '<C-w><C-k>', 'Move focus to the upper window' },
 
-  { 'n', '<leader>wwh', '<C-W>h', 'Move window left' },
-  { 'n', '<leader>wwj', '<C-W>j', 'Move window down' },
-  { 'n', '<leader>wwk', '<C-W>k', 'Move window up' },
-  { 'n', '<leader>wwh', '<C-W>h', 'Move window left' },
+  { 'n', '<leader>wh', '<C-W>h', 'Move window left' },
+  { 'n', '<leader>wj', '<C-W>j', 'Move window down' },
+  { 'n', '<leader>wk', '<C-W>k', 'Move window up' },
+  { 'n', '<leader>wh', '<C-W>h', 'Move window left' },
 
   -- nvim-tree
   { 'n', '<leader>a', '<CMD>NvimTreeOpen<CR>', 'Open nvim-tree' },
@@ -35,11 +35,11 @@ M.mappings = {
 
   -- lsp
   { 'n', '<leader>q', vim.diagnostic.setloclist, 'Open diagnostic [Q]uickfix list' },
-  -- { 'n', '<leader>lr', vim.lsp.buf.rename, 'LSP Rename' },
-  -- { 'n', '<leader>lg', vim.lsp.buf.definition, 'LSP Go to definition' },
-  -- { 'n', '<leader>lG', vim.lsp.buf.implementation, 'LSP Go to implementation' },
-  -- { 'n', '<leader>lh', vim.lsp.buf.hover, 'LSP Hover' },
-  -- { 'i', '<C-h>', vim.lsp.buf.signature_help, 'LSP Signature help' },
+  { 'n', '<leader>lr', vim.lsp.buf.rename, 'LSP Rename' },
+  { 'n', '<leader>lg', vim.lsp.buf.definition, 'LSP Go to definition' },
+  { 'n', '<leader>lG', vim.lsp.buf.implementation, 'LSP Go to implementation' },
+  { 'n', '<leader>lh', vim.lsp.buf.hover, 'LSP Hover' },
+  { 'i', '<C-h>', vim.lsp.buf.signature_help, 'LSP Signature help' },
 }
 
 return M
