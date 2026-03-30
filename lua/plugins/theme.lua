@@ -1,5 +1,13 @@
 return {
-    'sainnhe/everforest',
-    priority = 1000,
-    config = function() vim.cmd.colorscheme 'everforest' end,
+    'lmantw/themify.nvim',
+
+    lazy = false,
+    priority = 999,
+
+    config = {
+        'folke/tokyonight.nvim',
+        'sho-87/kanagawa-paper.nvim',
+        'comfysage/evergarden',
+        'default',
+    },
 }

@@ -5,9 +5,9 @@ M.mappings = {
   -- misc
   { 'n', '<C-s>', '<CMD>w<CR>', 'Save buffer' },
   { 'n', '<C-Q>', '<CMD>qa!<CR>', 'Quit without saving' },
-  { 'n', '<leader>y', '"+y', 'Copy to system clipboard' },
-  { 'n', '<leader>p', '"+p', 'Paste from system clipboard after cursor' },
-  { 'n', '<leader>P', '"+P', 'Paste from system clipboard before cursor' },
+  { { 'n', 'v' }, '<leader>y', '"+y', 'Copy to system clipboard' },
+  { { 'n', 'v' }, '<leader>p', '"+p', 'Paste from system clipboard after cursor' },
+  { { 'n', 'v' }, '<leader>P', '"+P', 'Paste from system clipboard before cursor' },
 
   { 'n', '<left>', '<cmd>echo "Use h to move!!"<CR>' },
   { 'n', '<right>', '<cmd>echo "Use l to move!!"<CR>' },
@@ -34,11 +34,12 @@ M.mappings = {
   { 'n', '<leader>;', '<CMD>NvimTreeClose<CR>', 'Close nvim-tree' },
 
   -- lsp
-  { 'n', '<leader>q', vim.diagnostic.setloclist, 'Open diagnostic [Q]uickfix list' },
-  { 'n', '<leader>lr', vim.lsp.buf.rename, 'LSP Rename' },
-  { 'n', '<leader>lg', vim.lsp.buf.definition, 'LSP Go to definition' },
-  { 'n', '<leader>lG', vim.lsp.buf.implementation, 'LSP Go to implementation' },
-  { 'n', '<leader>lh', vim.lsp.buf.hover, 'LSP Hover' },
+  { 'n', '<leader>lq', vim.diagnostic.setloclist, '[L]SP Open diagnostic [Q]uickfix list' },
+  { 'n', '<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename' },
+  { 'n', '<leader>lg', vim.lsp.buf.definition, '[L]SP Go to [d]efinition' },
+  { 'n', '<leader>lG', vim.lsp.buf.implementation, '[L]SP Go to [i]mplementation' },
+  { 'n', '<leader>lh', vim.lsp.buf.hover, '[L]SP [H]over' },
+  { 'n', '<leader>la', vim.lsp.buf.code_action, '[L]SP Code [a]ction' },
   { 'i', '<C-h>', vim.lsp.buf.signature_help, 'LSP Signature help' },
 }
 
