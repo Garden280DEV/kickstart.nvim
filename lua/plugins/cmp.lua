@@ -53,10 +53,12 @@ return { -- Autocompletion
             -- <c-k>: Toggle signature help
             --
             -- See :h blink-cmp-config-keymap for defining your own keymap
-            preset = 'super-tab',
+            preset = 'enter',
 
             ['<C-j>'] = { 'select_next', 'fallback' },
+            ['<Tab>'] = { 'select_next', 'fallback' },
             ['<C-k>'] = { 'select_prev', 'fallback' },
+            ['<S-Tab>'] = { 'select_prev', 'fallback' },
         },
 
         appearance = {
