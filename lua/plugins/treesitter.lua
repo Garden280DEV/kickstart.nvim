@@ -7,7 +7,7 @@ return { -- Highlight, edit, and navigate code
         auto_install = true,
     },
     config = function()
-        local parsers = require 'treesitter_parsers'
+        local parsers = require 'list_treesitter'
         require('nvim-treesitter').install(parsers)
 
         vim.api.nvim_create_autocmd('FileType', {
