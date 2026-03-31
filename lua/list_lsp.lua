@@ -7,7 +7,13 @@ M.clangd = {}
 M.pyright = {}
 M.black = {}
 
-M.html = {}
+M.html = {
+    settings = { html = {
+        format = {
+            indentInnerHtml = true,
+        },
+    } },
+}
 M.cssls = {}
 M.ts_ls = {}
 M.biome = {}
