@@ -53,6 +53,7 @@ o.shiftwidth = 0
 o.tabstop = 4
 
 opt.foldlevelstart = 99
+opt.smartindent = false
 
 -- See :help vim.diagnostic.Opts
 vim.diagnostic.config {
