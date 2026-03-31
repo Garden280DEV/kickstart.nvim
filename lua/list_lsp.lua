@@ -10,7 +10,7 @@ M.black = {}
 M.html = {}
 M.cssls = {}
 M.ts_ls = {}
-M.eslint = {}
+M.biome = {}
 M.svelte = {}
 
 M.lua_ls = {
