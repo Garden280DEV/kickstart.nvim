@@ -8,4 +8,4 @@ require 'core.autocmds'
 require 'core.lazy'
 require('lazy').setup 'plugins'
 
--- map(require 'mappings_plugins')
+map(require 'mappings_plugins')
