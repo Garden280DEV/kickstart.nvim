@@ -2,7 +2,7 @@ return {
     'nvim-tree/nvim-tree.lua',
     opts = {
         filters = {
-            custom = { '.uid', '.tmp' },
+            custom = { '.uid', '.tmp', '.import' },
         },
     },
     init = function()
