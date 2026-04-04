@@ -22,6 +22,11 @@ M.mappings = {
     -- tabs
     { 'n', '<Tab>', '<CMD>BufferNext<CR>', 'Go to next buffer' },
     { 'n', '<S-Tab>', '<CMD>BufferNext<CR>', 'Go to prev buffer' },
+
+    -- menus
+    { 'n', '<Leader>ml', '<CMD>Lazy<CR>', 'Open Lazy menu' },
+    { 'n', '<Leader>mm', '<CMD>Mason<CR>', 'Open Mason menu' },
+    { 'n', '<Leader>mt', '<CMD>Themify<CR>', 'Open Themify menu' },
 }
 
 return M

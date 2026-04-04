@@ -15,8 +15,8 @@ return { -- Useful plugin to show you pending keybinds.
             { '<leader>t', group = '[T]oggle' },
             { '<leader>w', group = '[W]indow' },
             { '<leader>l', group = '[L]SP' },
+            { '<leader>m', group = '[M]enus' },
             { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } }, -- Enable gitsigns recommended keymaps first
-            { 'gr', group = 'LSP Actions', mode = { 'n' } },
         },
     },
 }
