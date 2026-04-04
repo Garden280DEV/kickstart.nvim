@@ -32,7 +32,7 @@ o.signcolumn = 'yes'
 
 o.updatetime = 250
 
-o.timeoutlen = 300
+o.timeoutlen = 1000
 
 o.splitright = true
 o.splitbelow = true
