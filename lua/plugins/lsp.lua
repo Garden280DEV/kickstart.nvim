@@ -61,10 +61,9 @@ return {
 
         -- Getting and enabling servers
         ---@type table<string, vim.lsp.Config>
-        local servers = require 'list_lsp'
-        local ensure_installed = vim.tbl_keys(servers or {})
-        require('mason-tool-installer').setup { ensure_installed = ensure_installed }
-        for name, server in pairs(servers) do
+        local list_lsp = require 'list_lsp'
+        require('mason-tool-installer').setup { ensure_installed = list_lsp.ensure_installed or {} }
+        for name, server in pairs(list_lsp.servers) do
             vim.lsp.config(name, server)
             vim.lsp.enable(name)
         end

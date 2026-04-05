@@ -1,4 +1,7 @@
-local M = {}
+local M = {
+    servers = {},
+    ensure_installed = {},
+}
 
 for server, config in pairs {
     -- misc
@@ -28,7 +31,13 @@ for server, config in pairs {
             Lua = {},
         },
     },
-    'clangd',
+    clangd = {
+        exists = true,
+        cmd = {
+            'clangd',
+            '--compile-commands-dir=build', -- Replace 'build' with your actual path
+        },
+    },
     -- python
     'pyright',
     'black',
@@ -46,9 +55,11 @@ for server, config in pairs {
     'biome',
 } do
     if type(config) == 'string' then
-        M[config] = {}
+        M.servers[config] = {}
+        table.insert(M.ensure_installed, config)
     elseif type(config) == 'table' then
-        M[server] = config
+        M.servers[server] = config
+        if not config.exists then table.insert(M.ensure_installed, server) end
     end
 end
 
