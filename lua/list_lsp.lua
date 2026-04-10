@@ -43,11 +43,13 @@ for server, config in pairs {
     'black',
     -- web
     html = {
-        settings = { html = {
-            format = {
-                indentInnerHtml = true,
+        settings = {
+            html = {
+                format = {
+                    indentInnerHtml = true,
+                },
             },
-        } },
+        },
     },
     'cssls',
     'ts_ls',
